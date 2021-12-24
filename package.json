@@ -1,0 +1,18 @@
+{
+  "name": "simple-nodejs-server",
+  "version": "1.0.0",
+  "description": "A very simple Express app for demonstration purposes",
+  "main": "api.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "dsp9107",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

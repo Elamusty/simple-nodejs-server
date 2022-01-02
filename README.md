@@ -36,8 +36,7 @@ terraform apply
 | var.tf | We specify our AWS Access key and Secret keys for our AWS profile where we would be hosting this application. |
 | main.tf | We specify our preferred region and retrieve the list of availability zones in the region |
 | vpc.tf| Using this file, we utilise AWS VPC module to create our VPC, subnets, specify our CIDR range. In our file, we are creating 3 public and private subnets. We also enabled NAT gateway and DNS hostname. |
-| awssecuritygrp.tf  | Using this file, we create 2 security groups, we would also be having 2 worker nodes group. We are allowing access via port 22(ssh). 
- |
+| awssecuritygrp.tf  | Using this file, we create 2 security groups, we would also be having 2 worker nodes group. We are allowing access via port 22(ssh). |
 | eks-cluster.tf | Using this file,  we create our EKS cluster, worker groups and specify the number of instances and also mapping our worker groups to our earlier created security group. |
 | kubernetes.tf | In this file, we set our newly created EKS cluster as the host and specify our authentication token and cluster ca certificate. Then we process to create a deployment and service for our application using our earlier created image. |
 | output.tf | We use this file to output the details of the cluster and also of our load balancer that our application can be reached from. |
